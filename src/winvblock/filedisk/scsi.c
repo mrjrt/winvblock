@@ -390,4 +390,5 @@ NTSTATUS STDCALL WvFilediskScsiReadWrite(
     err_impersonate:
 
     WvlPassIrpUp(dev_obj, irp, IO_NO_INCREMENT);
+    return status;
   }

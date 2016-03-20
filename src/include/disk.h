@@ -213,7 +213,7 @@ extern WVL_M_LIB WVL_F_DISK_PNP WvlDiskPnp;
 /** General. */
 extern WVL_M_LIB NTSTATUS STDCALL WvlDiskCreatePdo(
     IN PDRIVER_OBJECT,
-    IN SIZE_T,
+    IN ULONG,
     IN WVL_E_DISK_MEDIA_TYPE,
     OUT PDEVICE_OBJECT *
   );

@@ -490,7 +490,7 @@ WVL_M_LIB NTSTATUS STDCALL WvDummyAdd(
   ) {
     /* Next two lines calculate the minimum "safe" dummy ID offset */
     struct wv_dummy_add_ { S_WVL_DUMMY_PDO p; WV_S_DUMMY_IDS i; };
-    const SIZE_T dummy_min_offset = FIELD_OFFSET(struct wv_dummy_add_, i);
+    const ULONG dummy_min_offset = FIELD_OFFSET(struct wv_dummy_add_, i);
     BOOLEAN invalid_params;
     ULONG dummy_end;
     NTSTATUS status;

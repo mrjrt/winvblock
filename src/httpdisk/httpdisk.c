@@ -1591,7 +1591,7 @@ HttpDiskGetBlock (
         return IoStatus->Status;
     }
 
-    dataLen = nRecv - (pData - buffer);
+    dataLen = nRecv - (unsigned int)(pData - buffer);
 
     if (dataLen > Length || pData + dataLen > buffer + BUFFER_SIZE)
     {

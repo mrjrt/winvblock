@@ -22,8 +22,8 @@ NTSTATUS tdi_associate_address(PFILE_OBJECT connectionFileObject, HANDLE address
 NTSTATUS tdi_disassociate_address(PFILE_OBJECT connectionFileObject);
 NTSTATUS tdi_connect(PFILE_OBJECT connectionFileObject, ULONG addr, USHORT port);
 NTSTATUS tdi_disconnect(PFILE_OBJECT connectionFileObject, ULONG flags);
-NTSTATUS tdi_send_dgram(PFILE_OBJECT addressFileObject, ULONG addr, USHORT port, const char *buf, int len);
-NTSTATUS tdi_recv_dgram(PFILE_OBJECT addressFileObject, PULONG addr, PUSHORT port, char *buf, int len, ULONG flags);
-NTSTATUS tdi_send_stream(PFILE_OBJECT connectionFileObject, const char *buf, int len, ULONG flags);
-NTSTATUS tdi_recv_stream(PFILE_OBJECT connectionFileObject, char *buf, int len, ULONG flags);
+int tdi_send_dgram(PFILE_OBJECT addressFileObject, ULONG addr, USHORT port, const char *buf, int len);
+int tdi_recv_dgram(PFILE_OBJECT addressFileObject, PULONG addr, PUSHORT port, char *buf, int len, ULONG flags);
+int tdi_send_stream(PFILE_OBJECT connectionFileObject, const char *buf, int len, ULONG flags);
+int tdi_recv_stream(PFILE_OBJECT connectionFileObject, char *buf, int len, ULONG flags);
 NTSTATUS tdi_query_address(PFILE_OBJECT addressFileObject, PULONG addr, PUSHORT port);

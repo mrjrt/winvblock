@@ -85,7 +85,7 @@ WVL_M_LIB NTSTATUS STDCALL WvlDiskSysCtl(
  */
 WVL_M_LIB NTSTATUS STDCALL WvlDiskCreatePdo(
     IN PDRIVER_OBJECT DriverObj,
-    IN SIZE_T ExtensionSize,
+    IN ULONG ExtensionSize,
     IN WVL_E_DISK_MEDIA_TYPE MediaType,
     OUT PDEVICE_OBJECT * Pdo
   ) {

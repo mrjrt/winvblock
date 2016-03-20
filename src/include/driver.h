@@ -699,7 +699,7 @@ struct WV_DEV_EXT {
     HANDLE ThreadHandle;
 
     /** The device's thread */
-    ETHREAD * Thread;
+    PETHREAD Thread;
 
     /**
      * The device's IRP queue.  Device must be acquired for inspection

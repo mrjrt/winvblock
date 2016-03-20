@@ -374,7 +374,7 @@ NTSTATUS tdi_disconnect(PFILE_OBJECT connectionFileObject, ULONG flags)
     return status;
 }
 
-NTSTATUS tdi_send_dgram(PFILE_OBJECT addressFileObject, ULONG addr, USHORT port, const char *buf, int len)
+int tdi_send_dgram(PFILE_OBJECT addressFileObject, ULONG addr, USHORT port, const char *buf, int len)
 {
     PDEVICE_OBJECT              devObj;
     KEVENT                      event;
@@ -462,10 +462,10 @@ NTSTATUS tdi_send_dgram(PFILE_OBJECT addressFileObject, ULONG addr, USHORT port,
 
     ExFreePool(remoteInfo);
 
-    return NT_SUCCESS(status) ? iosb.Information : status;
+    return NT_SUCCESS(status) ? *(int*)iosb.Information : status;
 }
 
-NTSTATUS tdi_recv_dgram(PFILE_OBJECT addressFileObject, PULONG addr, PUSHORT port, char *buf, int len, ULONG flags)
+int tdi_recv_dgram(PFILE_OBJECT addressFileObject, PULONG addr, PUSHORT port, char *buf, int len, ULONG flags)
 {
     PDEVICE_OBJECT              devObj;
     KEVENT                      event;
@@ -567,10 +567,10 @@ NTSTATUS tdi_recv_dgram(PFILE_OBJECT addressFileObject, PULONG addr, PUSHORT por
 
     ExFreePool(remoteInfo);
 
-    return NT_SUCCESS(status) ? iosb.Information : status;
+    return NT_SUCCESS(status) ? (int)iosb.Information : status;
 }
 
-NTSTATUS tdi_send_stream(PFILE_OBJECT connectionFileObject, const char *buf, int len, ULONG flags)
+int tdi_send_stream(PFILE_OBJECT connectionFileObject, const char *buf, int len, ULONG flags)
 {
     PDEVICE_OBJECT  devObj;
     KEVENT          event;
@@ -628,10 +628,10 @@ NTSTATUS tdi_send_stream(PFILE_OBJECT connectionFileObject, const char *buf, int
         status = iosb.Status;
     }
 
-    return NT_SUCCESS(status) ? iosb.Information : status;
+    return NT_SUCCESS(status) ? (int)iosb.Information : status;
 }
 
-NTSTATUS tdi_recv_stream(PFILE_OBJECT connectionFileObject, char *buf, int len, ULONG flags)
+int tdi_recv_stream(PFILE_OBJECT connectionFileObject, char *buf, int len, ULONG flags)
 {
     PDEVICE_OBJECT  devObj;
     KEVENT          event;
@@ -689,7 +689,7 @@ NTSTATUS tdi_recv_stream(PFILE_OBJECT connectionFileObject, char *buf, int len, 
         status = iosb.Status;
     }
 
-    return NT_SUCCESS(status) ? iosb.Information : status;
+    return NT_SUCCESS(status) ? (int)iosb.Information : status;
 }
 
 NTSTATUS tdi_query_address(PFILE_OBJECT addressFileObject, PULONG addr, PUSHORT port)

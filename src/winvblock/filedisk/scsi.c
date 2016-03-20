@@ -356,7 +356,7 @@ NTSTATUS STDCALL WvFilediskScsiReadWrite(
       
     /* Impersonate the user who opened the file */
     if (disk->Impersonate) {
-        status = SeImpersonateClientEx(&disk->SecurityContext, NULL);
+        status = SeImpersonateClientEx(disk->SecurityContext, NULL);
         if (!NT_SUCCESS(status)) {
             DBG("Couldn't impersonate!\n");
             irp->IoStatus.Information = 0;

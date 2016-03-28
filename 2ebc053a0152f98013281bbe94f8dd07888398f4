@@ -1,0 +1,449 @@
+Microsoft (R) Windows Debugger Version 6.12.0002.633 X86
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+Opened \\.\pipe\vxp1
+Waiting to reconnect...
+Connected to Windows XP 2600 x86 compatible target at (Mon Mar 28 02:21:22.218 2016 (UTC + 1:00)), ptr64 FALSE
+Kernel Debugger connection established.  (Initial Breakpoint requested)
+Symbol search path is: *** Invalid ***
+****************************************************************************
+* Symbol loading may be unreliable without a symbol search path.           *
+* Use .symfix to have the debugger choose a symbol path.                   *
+* After setting your symbol path, use .reload to refresh symbol locations. *
+****************************************************************************
+Executable search path is:
+*********************************************************************
+* Symbols can not be loaded because symbol path is not initialized. *
+*                                                                   *
+* The Symbol Path can be set by:                                    *
+*   using the _NT_SYMBOL_PATH environment variable.                 *
+*   using the -y <symbol_path> argument when starting the debugger. *
+*   using .sympath and .sympath+                                    *
+*********************************************************************
+*** ERROR: Symbol file could not be found.  Defaulted to export symbols for ntoskrnl.exe -
+Windows XP Kernel Version 2600 MP (1 procs) Checked x86 compatible
+Built by: 2600.xpsp.080413-2133
+Machine Name:
+Kernel base = 0x8095b000 PsLoadedModuleList = 0x80a4e708
+System Uptime: not available
+Break instruction exception - code 80000003 (first chance)
+nt!DbgBreakPoint:
+80a11f5c cc              int     3
+kd> g
+Break instruction exception - code 80000003 (first chance)
+*******************************************************************************
+*                                                                             *
+*   You are seeing this message because you pressed either                    *
+*       CTRL+C (if you run kd.exe) or,                                        *
+*       CTRL+BREAK (if you run WinDBG),                                       *
+*   on your debugger machine's keyboard.                                      *
+*                                                                             *
+*                   THIS IS NOT A BUG OR A SYSTEM CRASH                       *
+*                                                                             *
+* If you did not intend to break into the debugger, press the "g" key, then   *
+* press the "Enter" key now.  This message might immediately reappear.  If it *
+* does, press "g" and "Enter" again.                                          *
+*                                                                             *
+*******************************************************************************
+nt!DbgBreakPointWithStatus+0x4:
+80a11f68 cc              int     3
+kd> g
+PCI: Warning unsupported IDE controller configuration for VEN_8086&DEV_7111!NIC Boot Configuration Driver initializing
+[VERBOSE] Enumerated subkey: VEN_1022&DEV_2000&SUBSYS_20001022&REV_10
+[VERBOSE] device instance "VEN_1022&DEV_2000&SUBSYS_20001022&REV_10\4&47b7341&0&0888" has the following ClassGUID: {4D36E972-E325-11CE-BFC1-08002BE10318}
+device instance "PCI\VEN_1022&DEV_2000&SUBSYS_20001022&REV_10\4&47b7341&0&0888" is a network adapter (matching Device Class GUID)
+Could not get KVI length for "Driver": c0000034
+Network adapter is not configured. searching for network adapter class instance matching DeviceID "VEN_1022&DEV_2000&SUBSYS_20001022&REV_10"
+Looking for matching class instance to device-id "VEN_1022&DEV_2000&SUBSYS_20001022&REV_10"
+Could not get KVI length for "MatchingDeviceId": c0000034
+[VERBOSE] Skipping class instance "{4D36E972-E325-11CE-BFC1-08002BE10318}\0000" without registry value "MatchingDeviceId".
+Class instance "{4D36E972-E325-11CE-BFC1-08002BE10318}\0001": "MatchingDeviceId" value is "pci\ven_10ec&dev_8168&rev_06"
+Class instance "{4D36E972-E325-11CE-BFC1-08002BE10318}\0001": deviceID is "ven_10ec&dev_8168&rev_06"
+No match was found for DeviceID "VEN_1022&DEV_2000&SUBSYS_20001022&REV_10"
+Class instance "{4D36E972-E325-11CE-BFC1-08002BE10318}\0002": "MatchingDeviceId" value is "pci\ven_1022&dev_2000"
+Class instance "{4D36E972-E325-11CE-BFC1-08002BE10318}\0002": deviceID is "ven_1022&dev_2000"
+Class instance "{4D36E972-E325-11CE-BFC1-08002BE10318}\0002" is matching DeviceID "VEN_1022&DEV_2000&SUBSYS_20001022&REV_10"
+Asssigning class instance "{4D36E972-E325-11CE-BFC1-08002BE10318}\0002" to device instance "VEN_1022&DEV_2000&SUBSYS_20001022&REV_10\4&47b7341&0&0888"
+[VERBOSE] NIC service: PCnet
+[VERBOSE] NIC description: Ethernet Controller
+Registry value "Driver" has been set to "{4D36E972-E325-11CE-BFC1-08002BE10318}\0002"
+[VERBOSE] Enumerated subkey: VEN_104B&DEV_1040&SUBSYS_1040104B&REV_01
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_104B&DEV_1040&SUBSYS_1040104B&REV_01\3&61aaa01&0&80" has no ClassGUID registry entry: c0000034
+[VERBOSE] Enumerated subkey: VEN_1274&DEV_1371&SUBSYS_13711274&REV_02
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_1274&DEV_1371&SUBSYS_13711274&REV_02\4&47b7341&0&1088" has no ClassGUID registry entry: c0000034
+[VERBOSE] Enumerated subkey: VEN_15AD&DEV_0405&SUBSYS_040515AD&REV_00
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_0405&SUBSYS_040515AD&REV_00\3&61aaa01&0&78" has no ClassGUID registry entry: c0000034
+[VERBOSE] Enumerated subkey: VEN_15AD&DEV_0740&SUBSYS_074015AD&REV_10
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_0740&SUBSYS_074015AD&REV_10\3&61aaa01&0&3F" has no ClassGUID registry entry: c0000034
+[VERBOSE] Enumerated subkey: VEN_15AD&DEV_0770&SUBSYS_077015AD&REV_00
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_0770&SUBSYS_077015AD&REV_00\4&47b7341&0&1888" has no ClassGUID registry entry: c0000034
+[VERBOSE] Enumerated subkey: VEN_15AD&DEV_0790&SUBSYS_00000000&REV_02
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_0790&SUBSYS_00000000&REV_02\3&61aaa01&0&88" has no ClassGUID registry entry: c0000034
+[VERBOSE] Enumerated subkey: VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&A8" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&A9" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&AA" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&AB" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&AC" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&AD" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&AE" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&AF" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&B0" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&B1" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&B2" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&B3" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&B4" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&B5" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&B6" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&B7" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&B8" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&B9" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&BA" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&BB" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&BC" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&BD" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&BE" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&BF" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&C0" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&C1" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&C2" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&C3" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&C4" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&C5" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&C6" has no ClassGUID registry entry: c0000034
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_15AD&DEV_07A0&SUBSYS_00000000&REV_01\3&61aaa01&0&C7" has no ClassGUID registry entry: c0000034
+[VERBOSE] Enumerated subkey: VEN_8086&DEV_7110&SUBSYS_00000000&REV_08
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_8086&DEV_7110&SUBSYS_00000000&REV_08\3&61aaa01&0&38" has no ClassGUID registry entry: c0000034
+[VERBOSE] Enumerated subkey: VEN_8086&DEV_7111&SUBSYS_197615AD&REV_01
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_8086&DEV_7111&SUBSYS_197615AD&REV_01\3&61aaa01&0&39" has no ClassGUID registry entry: c0000034
+[VERBOSE] Enumerated subkey: VEN_8086&DEV_7112&SUBSYS_197615AD&REV_00
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_8086&DEV_7112&SUBSYS_197615AD&REV_00\4&47b7341&0&0088" has no ClassGUID registry entry: c0000034
+[VERBOSE] Enumerated subkey: VEN_8086&DEV_7190&SUBSYS_00000000&REV_01
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_8086&DEV_7190&SUBSYS_00000000&REV_01\3&61aaa01&0&00" has no ClassGUID registry entry: c0000034
+[VERBOSE] Enumerated subkey: VEN_8086&DEV_7191&SUBSYS_00000000&REV_01
+Could not get KVI length for "ClassGUID": c0000034
+[VERBOSE] device instance "VEN_8086&DEV_7191&SUBSYS_00000000&REV_01\3&61aaa01&0&08" has no ClassGUID registry entry: c0000034
+NIC Boot Configuration Driver finalizing
+SAN Boot Configuration Driver initialising
+SystemStartOptions are /FASTDETECT /NOGUIBOOT /DEBUGPORT=COM1 /BAUDRATE=115200 /BREAK
+Graphical boot is disabled
+Boot screen text is enabled
+No iBFT found
+Found ACPI table "aBFT" at 9e3c0 OEM ID "FENSYS" OEM table ID "iPXE"
+AoE boot via iPXE
+Found aBFT target e0.0
+Found aBFT NIC 00:0c:29:d2:ea:f9
+NIC 00:0c:29:d2:ea:f9 target e0.0
+Found NIC with MAC address 00:0c:29:d2:ea:f9 at "\??\PCI#VEN_1022&DEV_2000&SUBSYS_20001022&REV_10#4&47b7341&0&0888#{ad498944-762f-11d0-8dcb-00c04fc3358c}\{4DB30059-46A5-4F69-B52A-C67B3DE4C8A3}"
+NIC 00:0c:29:d2:ea:f9 is interface "\??\PCI#VEN_1022&DEV_2000&SUBSYS_20001022&REV_10#4&47b7341&0&0888#{ad498944-762f-11d0-8dcb-00c04fc3358c}\{4DB30059-46A5-4F69-B52A-C67B3DE4C8A3}"
+NIC 00:0c:29:d2:ea:f9 is PDO 81A95380
+NIC 00:0c:29:d2:ea:f9 is NetCfgInstanceId "{4DB30059-46A5-4F69-B52A-C67B3DE4C8A3}"
+Successfully identified aBFT NIC
+No sBFT found
+Attempting SAN boot; will wait for system disk
+g:\temp\coding\winvblock\src\winvblock\driver.c: DriverEntry() @ line 293: Entry
+g:\temp\coding\winvblock\src\winvblock\registry.c: registry__note_os_load_opts() @ line 369: OsLoadOptions: /FASTDETECT /NOGUIBOOT /DEBUGPORT=COM1 /BAUDRATE=115200 /BREAK
+g:\temp\coding\winvblock\src\winvblock\driver.c: driver__attach_fdo_() @ line 151: Entry
+g:\temp\coding\winvblock\src\winvblock\driver.c: driver__attach_fdo_() @ line 222: Exit
+g:\temp\coding\winvblock\src\winvblock\bus\bus.c: WvBusDefaultThread_() @ line 597: g:\temp\coding\winvblock\src\winvblock\driver.c: DriverEntry() @ line 348: Alive.
+Exit
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 456: bus_pnp: IRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 456: bus_pnp: IRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 472: bus_pnp: IRP_MN_QUERY_CAPABILITIES
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnpSimple_() @ line 382: bus_pnp: IRP_MN_QUERY_PNP_DEVICE_STATE
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 468: bus_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 468: bus_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 60: INT 0x13 Segment: 0x98c0
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 61: INT 0x13 Offset: 0x0100
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 62: INT 0x13 Hook: 0x00098d00
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 63: INT 0x13 Safe Hook Signature: $INT13SF
+g:\temp\coding\winvblock\src\winvblock\ramdisk\memdisk.c: WvMemdiskFind() @ line 131: Non-MEMDISK INT 0x13 Safe Hook
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 60: INT 0x13 Segment: 0x9bd8
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 61: INT 0x13 Offset: 0x03cd
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 62: INT 0x13 Hook: 0x0009c14d
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 63: INT 0x13 Safe Hook Signature: PR
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 65: Invalid INT 0x13 Safe Hook Signature; End of chain
+g:\temp\coding\winvblock\src\winvblock\ramdisk\memdisk.c: WvMemdiskFind() @ line 143: No MEMDISKs found
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 60: INT 0x13 Segment: 0x98c0
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 61: INT 0x13 Offset: 0x0100
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 62: INT 0x13 Hook: 0x00098d00
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 63: INT 0x13 Safe Hook Signature: $INT13SF
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 88: GRUB4DOS SourceDrive: 0x00
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 90: GRUB4DOS DestDrive: 0x00
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 91: GRUB4DOS MaxHead: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 93: GRUB4DOS MaxSector: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 95: GRUB4DOS DestMaxCylinder: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 97: GRUB4DOS DestMaxHead: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 99: GRUB4DOS DestMaxSector: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 101: GRUB4DOS SectorStart: 0x00000000
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 103: GRUB4DOS SectorCount: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 106: Skipping non-RAM disk GRUB4DOS mapping
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 88: GRUB4DOS SourceDrive: 0x00
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 90: GRUB4DOS DestDrive: 0x00
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 91: GRUB4DOS MaxHead: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 93: GRUB4DOS MaxSector: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 95: GRUB4DOS DestMaxCylinder: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 97: GRUB4DOS DestMaxHead: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 99: GRUB4DOS DestMaxSector: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 101: GRUB4DOS SectorStart: 0x00000000
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 103: GRUB4DOS SectorCount: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 106: Skipping non-RAM disk GRUB4DOS mapping
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 88: GRUB4DOS SourceDrive: 0x00
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 90: GRUB4DOS DestDrive: 0x00
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 91: GRUB4DOS MaxHead: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 93: GRUB4DOS MaxSector: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 95: GRUB4DOS DestMaxCylinder: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 97: GRUB4DOS DestMaxHead: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 99: GRUB4DOS DestMaxSector: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 101: GRUB4DOS SectorStart: 0x00000000
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 103: GRUB4DOS SectorCount: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 106: Skipping non-RAM disk GRUB4DOS mapping
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 88: GRUB4DOS SourceDrive: 0x00
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 90: GRUB4DOS DestDrive: 0x00
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 91: GRUB4DOS MaxHead: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 93: GRUB4DOS MaxSector: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 95: GRUB4DOS DestMaxCylinder: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 97: GRUB4DOS DestMaxHead: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 99: GRUB4DOS DestMaxSector: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 101: GRUB4DOS SectorStart: 0x00000000
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 103: GRUB4DOS SectorCount: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 106: Skipping non-RAM disk GRUB4DOS mapping
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 88: GRUB4DOS SourceDrive: 0x00
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 90: GRUB4DOS DestDrive: 0x00
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 91: GRUB4DOS MaxHead: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 93: GRUB4DOS MaxSector: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 95: GRUB4DOS DestMaxCylinder: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 97: GRUB4DOS DestMaxHead: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 99: GRUB4DOS DestMaxSector: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 101: GRUB4DOS SectorStart: 0x00000000
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 103: GRUB4DOS SectorCount: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 106: Skipping non-RAM disk GRUB4DOS mapping
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 88: GRUB4DOS SourceDrive: 0xff
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 90: GRUB4DOS DestDrive: 0xff
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 91: GRUB4DOS MaxHead: 254
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 93: GRUB4DOS MaxSector: 63
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 95: GRUB4DOS DestMaxCylinder: 130
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 97: GRUB4DOS DestMaxHead: 254
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 99: GRUB4DOS DestMaxSector: 63
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 101: GRUB4DOS SectorStart: 0x00040e88
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 103: GRUB4DOS SectorCount: 1826176
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 130: RAM Drive is type: 2
+g:\temp\coding\winvblock\src\winvblock\bus\bus.c: WvBusAddChild() @ line 94: Entry
+g:\temp\coding\winvblock\src\winvblock\disk\disk.c: create_pdo() @ line 140: Entry
+g:\temp\coding\winvblock\src\winvblock\disk\disk.c: create_pdo() @ line 167: Exit
+g:\temp\coding\winvblock\src\winvblock\bus\bus.c: WvBusAddChild() @ line 153: Exit
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 88: GRUB4DOS SourceDrive: 0x80
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 90: GRUB4DOS DestDrive: 0x81
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 91: GRUB4DOS MaxHead: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 93: GRUB4DOS MaxSector: 1
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 95: GRUB4DOS DestMaxCylinder: 1023
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 97: GRUB4DOS DestMaxHead: 254
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 99: GRUB4DOS DestMaxSector: 63
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 101: GRUB4DOS SectorStart: 0x00000000
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 103: GRUB4DOS SectorCount: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 106: Skipping non-RAM disk GRUB4DOS mapping
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 88: GRUB4DOS SourceDrive: 0x81
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 90: GRUB4DOS DestDrive: 0x80
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 91: GRUB4DOS MaxHead: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 93: GRUB4DOS MaxSector: 1
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 95: GRUB4DOS DestMaxCylinder: 1023
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 97: GRUB4DOS DestMaxHead: 254
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 99: GRUB4DOS DestMaxSector: 63
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 101: GRUB4DOS SectorStart: 0x00000000
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 103: GRUB4DOS SectorCount: 0
+g:\temp\coding\winvblock\src\winvblock\ramdisk\grub4dos.c: ramdisk_grub4dos__find() @ line 106: Skipping non-RAM disk GRUB4DOS mapping
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 60: INT 0x13 Segment: 0x9bd8
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 61: INT 0x13 Offset: 0x03cd
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 62: INT 0x13 Hook: 0x0009c14d
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 63: INT 0x13 Safe Hook Signature: PR
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 65: Invalid INT 0x13 Safe Hook Signature; End of chain
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 60: INT 0x13 Segment: 0x98c0
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 61: INT 0x13 Offset: 0x0100
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 62: INT 0x13 Hook: 0x00098d00
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 63: INT 0x13 Safe Hook Signature: $INT13SF
+g:\temp\coding\winvblock\src\winvblock\filedisk\grub4dos.c: process_param_block() @ line 236: RAM disk is not a parameter block.  Skipping.
+g:\temp\coding\winvblock\src\winvblock\filedisk\grub4dos.c: filedisk_grub4dos__find() @ line 387: Skipping non-sector-mapped GRUB4DOS disk
+g:\temp\coding\winvblock\src\winvblock\filedisk\grub4dos.c: filedisk_grub4dos__find() @ line 387: Skipping non-sector-mapped GRUB4DOS disk
+g:\temp\coding\winvblock\src\winvblock\filedisk\grub4dos.c: filedisk_grub4dos__find() @ line 387: Skipping non-sector-mapped GRUB4DOS disk
+g:\temp\coding\winvblock\src\winvblock\filedisk\grub4dos.c: filedisk_grub4dos__find() @ line 387: Skipping non-sector-mapped GRUB4DOS disk
+g:\temp\coding\winvblock\src\winvblock\filedisk\grub4dos.c: filedisk_grub4dos__find() @ line 387: Skipping non-sector-mapped GRUB4DOS disk
+g:\temp\coding\winvblock\src\winvblock\filedisk\grub4dos.c: filedisk_grub4dos__find() @ line 387: Skipping non-sector-mapped GRUB4DOS disk
+g:\temp\coding\winvblock\src\winvblock\filedisk\grub4dos.c: filedisk_grub4dos__find() @ line 387: Skipping non-sector-mapped GRUB4DOS disk
+g:\temp\coding\winvblock\src\winvblock\filedisk\grub4dos.c: filedisk_grub4dos__find() @ line 387: Skipping non-sector-mapped GRUB4DOS disk
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 60: INT 0x13 Segment: 0x9bd8
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 61: INT 0x13 Offset: 0x03cd
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 62: INT 0x13 Hook: 0x0009c14d
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 63: INT 0x13 Safe Hook Signature: PR
+g:\temp\coding\winvblock\src\winvblock\probe.c: WvProbeGetSafeHook() @ line 65: Invalid INT 0x13 Safe Hook Signature; End of chain
+g:\temp\coding\winvblock\src\winvblock\filedisk\grub4dos.c: filedisk_grub4dos__find() @ line 508: No GRUB4DOS sector-mapped disk mappings found
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 382: g:\temp\coding\winvblock\src\winvblock\bus\bus.c: WvBusDefaultThread_() @ line 597: Alive.
+disk_pnp: IIRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 398: disk_pnp: IRP_MN_QUERY_CAPABILITIES
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 472: bus_pnp: IRP_MN_QUERY_CAPABILITIES
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 386: disk_pnp: IRP_MN_QUERY_DEVICE_TEXT
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 386: disk_pnp: IRP_MN_QUERY_DEVICE_TEXT
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 382: disk_pnp: IIRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 382: disk_pnp: IIRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 382: disk_pnp: IIRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 365: disk_pnp: Unhandled IRP_MN_*: 11
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 394: disk_pnp: IRP_MN_QUERY_BUS_INFORMATION
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 365: disk_pnp: Unhandled IRP_MN_*: 10
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 468: bus_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 468: bus_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\bus\bus.c: WvBusDefaultThread_() @ line 597: Alive.
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 365: disk_pnp: Unhandled IRP_MN_*: 24
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 365: disk_pnp: Unhandled IRP_MN_*: 11
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 365: disk_pnp: Unhandled IRP_MN_*: 13
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 304: disk_pnp: IRP_MN_START_DEVICE
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (12)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (12)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (12)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (12)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (12)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (12)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (12)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (12)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (12)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (12)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (46)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (46)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (46)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (46)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (46)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (4a)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (be)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (be)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (be)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (be)!!
+g:\temp\coding\winvblock\src\winvblock\disk\scsi.c: disk_scsi__dispatch() @ line 492: Invalid SCSIOP (be)!!
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 398: disk_pnp: IRP_MN_QUERY_CAPABILITIES
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 472: bus_pnp: IRP_MN_QUERY_CAPABILITIES
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 298: disk_pnp: IRP_MN_QUERY_PNP_DEVICE_STATE
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+iBFT requested
+No iBFT available!
+g:\temp\coding\winvblock\src\aoe\driver.c: DriverEntry() @ line 226: Entry
+g:\temp\coding\winvblock\src\aoe\registry.c: AoeRegSetup() @ line 61: Entry
+g:\temp\coding\winvblock\src\aoe\driver.c: DriverEntry() @ line 238: Registry updated
+g:\temp\coding\winvblock\src\aoe\protocol.c: Protocol_Start() @ line 171: Entry
+g:\temp\coding\winvblock\src\aoe\protocol.c: Protocol_Start() @ line 207: Exit
+g:\temp\coding\winvblock\src\winvblock\bus\bus.c: WvBusAddChild() @ line 94: Entry
+g:\temp\coding\winvblock\src\winvblock\bus\bus.c: WvBusAddChild() @ line 153: Exit
+g:\temp\coding\winvblock\src\aoe\protocol.c: Protocol_BindAdapter() @ line 729: Adapter: Ethernet Controller
+g:\temp\coding\winvblock\src\aoe\protocol.c: Protocol_BindAdapter() @ line 731: Device Name: \DEVICE\{4DB30059-46A5-4F69-B52A-C67B3DE4C8A3}
+g:\temp\coding\winvblock\src\aoe\driver.c: AoeThread_() @ line 1296: Entry
+g:\temp\coding\winvblock\src\aoe\protocol.c: Protocol_BindAdapter() @ line 756: Mac: 00:0c:29:d2:ea:f9
+g:\temp\coding\winvblock\src\aoe\protocol.c: Protocol_BindAdapter() @ line 779: MTU: 1500
+g:\temp\coding\winvblock\src\aoe\driver.c: AoeThread_() @ line 1327: Sends: 0  Resends: 0  ResendFails: 0  Fails: 0  AoePendingTags_: 0  RequestTimeout: 0
+g:\temp\coding\winvblock\src\aoe\driver.c: AoeProcessAbft_() @ line 1544: Found aBFT at segment: 0x9e3c
+g:\temp\coding\winvblock\src\aoe\driver.c: AoeProcessAbft_() @ line 1580: Attaching AoE disk from client NIC 00:0c:29:d2:ea:f9 to major: 0 minor: 0
+g:\temp\coding\winvblock\src\winvblock\bus\bus.c: WvBusAddChild() @ line 94: Entry
+g:\temp\coding\winvblock\src\winvblock\disk\disk.c: create_pdo() @ line 140: Entry
+g:\temp\coding\winvblock\src\winvblock\disk\disk.c: create_pdo() @ line 167: Exit
+g:\temp\coding\winvblock\src\aoe\driver.c: aoe__reply() @ line 1159: Major: 0 minor: 0 found on server 00:11:43:26:ca:65
+g:\temp\coding\winvblock\src\aoe\driver.c: aoe__reply() @ line 1228: Got MaxSectorsPerPacket 2 at size of 1024. MTU of 1500 reached
+g:\temp\coding\winvblock\src\aoe\driver.c: AoeDiskInit_() @ line 666: Disk size: 10240M cylinders: 1305 heads: 255 sectors: 63 sectors per packet: 2
+g:\temp\coding\winvblock\src\winvblock\bus\bus.c: WvBusAddChild() @ line 153: Exit
+g:\temp\coding\winvblock\src\aoe\driver.c: DriverEntry() @ line 321: Exit
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 468: bus_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 468: bus_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\bus\bus.c: WvBusDefaultThread_() @ line 597: Alive.
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 456: bus_pnp: IRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 472: bus_pnp: IRP_MN_QUERY_CAPABILITIES
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 472: bus_pnp: IRP_MN_QUERY_CAPABILITIES
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 460: bus_pnp: IRP_MN_QUERY_DEVICE_TEXT
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 460: bus_pnp: IRP_MN_QUERY_DEVICE_TEXT
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 456: bus_pnp: IRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 456: bus_pnp: IRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 456: bus_pnp: IRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnpSimple_() @ line 429: bus_pnp: IRP_MN_QUERY_RESOURCE*
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 464: bus_pnp: IRP_MN_QUERY_BUS_INFORMATION
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnpSimple_() @ line 429: bus_pnp: IRP_MN_QUERY_RESOURCE*
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 382: disk_pnp: IIRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 398: disk_pnp: IRP_MN_QUERY_CAPABILITIES
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 472: bus_pnp: IRP_MN_QUERY_CAPABILITIES
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 386: disk_pnp: IRP_MN_QUERY_DEVICE_TEXT
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 386: disk_pnp: IRP_MN_QUERY_DEVICE_TEXT
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 382: disk_pnp: IIRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 382: disk_pnp: IIRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 382: disk_pnp: IIRP_MN_QUERY_ID
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 365: disk_pnp: Unhandled IRP_MN_*: 11
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 394: disk_pnp: IRP_MN_QUERY_BUS_INFORMATION
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 365: disk_pnp: Unhandled IRP_MN_*: 10
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 365: disk_pnp: Unhandled IRP_MN_*: 24
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 365: disk_pnp: Unhandled IRP_MN_*: 11
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 365: disk_pnp: Unhandled IRP_MN_*: 13
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 304: disk_pnp: IRP_MN_START_DEVICE
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 398: disk_pnp: IRP_MN_QUERY_CAPABILITIES
+g:\temp\coding\winvblock\src\winvblock\bus\pnp.c: WvBusPnp() @ line 472: bus_pnp: IRP_MN_QUERY_CAPABILITIES
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__simple_() @ line 298: disk_pnp: IRP_MN_QUERY_PNP_DEVICE_STATE
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+Waiting for SAN system disk (attempt 1)
+  System disk is <unknown>, boot disk is <unknown>
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+  MBR f9e4bcb6: "\??\WinVBlock#AoEHardDisk#1&c0ac9c8&0&AoE_at_Shelf_0.Slot_0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}"
+Found system disk at "\??\WinVBlock#AoEHardDisk#1&c0ac9c8&0&AoE_at_Shelf_0.Slot_0#{53f56307-b6bf-11d0-94f2-00a0c91efb8b}"
+Found SAN system disk; proceeding with boot
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\aoe\driver.c: AoeThread_() @ line 1327: Sends: 30  Resends: 0  ResendFails: 0  Fails: 0  AoePendingTags_: 0  RequestTimeout: 195527
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\aoe\driver.c: AoeThread_() @ line 1327: Sends: 11  Resends: 0  ResendFails: 0  Fails: 0  AoePendingTags_: 0  RequestTimeout: 192878
+g:\temp\coding\winvblock\src\winvblock\disk\pnp.c: disk_pnp__dispatch() @ line 390: disk_pnp: IRP_MN_QUERY_DEVICE_RELATIONS
+g:\temp\coding\winvblock\src\aoe\driver.c: AoeThread_() @ line 1327: Sends: 1  Resends: 0  ResendFails: 0  Fails: 0  AoePendingTags_: 0  RequestTimeout: 192690
+g:\temp\coding\winvblock\src\aoe\driver.c: AoeThread_() @ line 1327: Sends: 0  Resends: 0  ResendFails: 0  Fails: 0  AoePendingTags_: 0  RequestTimeout: 192690
+g:\temp\coding\winvblock\src\aoe\driver.c: AoeThread_() @ line 1327: Sends: 0  Resends: 0  ResendFails: 0  Fails: 0  AoePendingTags_: 0  RequestTimeout: 192690
+g:\temp\coding\winvblock\src\aoe\driver.c: AoeThread_() @ line 1327: Sends: 0  Resends: 0  ResendFails: 0  Fails: 0  AoePendingTags_: 0  RequestTimeout: 192690
+g:\temp\coding\winvblock\src\aoe\driver.c: AoeThread_() @ line 1327: Sends: 0  Resends: 0  ResendFails: 0  Fails: 0  AoePendingTags_: 0  RequestTimeout: 192690

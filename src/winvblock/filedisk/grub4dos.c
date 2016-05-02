@@ -189,6 +189,9 @@ filedisk_grub4dos__find (
   winvblock__bool FoundGrub4DosMapping = FALSE;
   filedisk__type_ptr filedisk_ptr;
 
+  DBG ( "GRUB4DOS File disks are disabled in this build.\n" );
+  return;
+
   /*
    * Find a GRUB4DOS sector-mapped disk.  Start by looking at the
    * real-mode IDT and following the "SafeMBRHook" INT 0x13 hook

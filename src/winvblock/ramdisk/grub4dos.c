@@ -54,6 +54,9 @@ ramdisk_grub4dos__find (
   winvblock__bool FoundGrub4DosMapping = FALSE;
   ramdisk__type_ptr ramdisk_ptr;
 
+  DBG ( "GRUB4DOS RAM disks are disabled in this build.\n" );
+  return;
+
   /*
    * Find a GRUB4DOS memory-mapped disk.  Start by looking at the
    * real-mode IDT and following the "SafeMBRHook" INT 0x13 hook
